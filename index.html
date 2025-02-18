@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+    :root{
+      --Green: hsl(75, 94%, 57%);
+      --White: hsl(0, 0%, 100%);
+      --Grey-700: hsl(0, 0%, 20%);
+      --Grey-800: hsl(0, 0%, 12%);
+      --Grey-900: hsl(0, 0%, 8%);
+      --Weights: 400, 600, 700;
+    }
+
+    *{
+      padding: 0;
+      margin: 0;
+      color: var(--White);
+    }
+
+    @font-face {
+      font-family: "inter";
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+    }
+
+    body {
+      font-size: 14px; /* Font size (paragraph): 14px */
+      font-family: "inter", sans-serif; /* Apply the font to the body */
+      background-color: var(--Grey-900);
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .card {
+      background-color: var(--Grey-800); /* Adding background color to the card */
+      padding: 20px; /* Adding padding for spacing */
+      border-radius: 10px; /* Adding rounded corners */
+      text-align: center; /* Centering the text within the card */
+      width: 300px; /* Limiting the width of the card */
+      margin: 20px auto; /* Centering the card in the middle of the body */
+    }
+
+    .name-address{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .name{
+      font-weight: 700;
+      font-size: 24px; /* Added font size for the name */
+      margin-bottom: 10px; /* Added margin for spacing */
+    }
+
+    .address{
+      color: var(--Green); /* Fixed the typo for color */
+      font-weight: 600;
+      font-size: 15px; /* Adding font size for address */
+      margin-bottom: 10px; /* Adding margin for spacing */
+    }
+
+    .bio{
+      margin-top: 30px;
+
+      color: var(--White);
+    }
+
+    .profile-img {
+      border-radius: 50%; /* Making the profile image circular */
+      width: 100px; /* Setting a specific width for the image */
+      height: 100px; /* Setting a specific height for the image */
+      padding: 10px;
+    }
+
+    .links {
+      margin-top: 15px; /* Adding some space above the links */
+      display: flex;
+      flex-direction: column; /* Arrange links in a column */
+      align-items: center; /* Center align the links */
+    }
+
+    .btn {
+      background-color: var(--Grey-700); /* Adding background color to buttons */
+      color: var(--White); /* Setting text color */
+      border: none; /* Removing default border */
+      padding: 10px 15px; /* Adding padding */
+      border-radius: 5px; /* Adding rounded corners */
+      cursor: pointer; /* Changing cursor on hover */
+      margin: 5px; /* Adding margin between buttons */
+      text-decoration: none; /* Removing underline from links */
+      display: inline-block; /* Allowing margin to work correctly */
+      width: 80%;
+      font-weight: 600;
+      height: 20px;
+    }
+
+    .btn:hover {
+      background-color: var(--Green) /* Darkening background on hover */
+    }
+
+    @media screen and (max-width : 375px) {
+      .card{
+        width: 250px;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="profile-img" src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall's profile picture">
+    <div class="name-address">
+      <h1 class="name">Jessica Randall</h1>
+      <p class="address">London, United Kingdom</p>
+    </div>
+    <p class="bio">"Front-end developer and avid reader."</p>
+    
+    <div class="links">
+      <a class="btn" href="#">GitHub</a>
+      <a class="btn" href="#">Frontend Mentor</a>
+      <a class="btn" href="#">LinkedIn</a>
+      <a class="btn" href="#">Twitter</a>
+      <a class="btn" href="#">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
